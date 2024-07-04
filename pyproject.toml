@@ -1,0 +1,28 @@
+[project]
+description = "Async API wrapper for Wuthery's core API written in Python"
+name = "wuthery.api"
+requires-python = ">=3.12"
+
+[tool.poetry]
+authors = ["seria <seria.ati@gmail.com>"]
+description = "Async API wrapper for Wuthery's core API written in Python"
+license = "GPL-3.0-only"
+name = "wuthery-api"
+packages = [{include = "wuthery"}]
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+aiohttp = "^3.9.5"
+python = "^3.12"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+ruff = "^0.5.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
